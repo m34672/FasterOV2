@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/storesheet.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link href="./images/logo.png" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/470e042b29.js" crossorigin="anonymous"></script>
+    <title>STORE</title>
+
+</head>
+
+<body>
+    <!-- row1：header + nav -->
+    <div class="row1">
+        <header id="header" class="hoc clear">
+            <a href="#">
+                <img class="logo" src="./images/logo_navy.png" alt="logo" />
+            </a>
+
+            <nav id="mainav" class="fl_right">
+                <ul class="clear">
+                    <li class="active">
+                        <a class="drop" href="#">我要點餐</a>
+                        <ul>
+                            <li><a href="#">商家總覽</a></li>
+                            <li><a href="#">搜尋點餐</a></li>
+                            <li><a href="#">地圖點餐</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a class="drop" href="#">訂單狀態</a>
+                        <ul>
+                            <li><a href="#">現在訂單</a></li>
+                            <li><a href="#">歷史訂單</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">我的最愛</a></li>
+                    <li class="active"><a href="#">會員中心</a></li>
+                    <li class="active">
+                        <a class="drop" href="#">登入/註冊</a>
+                        <ul>
+                            <li><a href="#">我是會員</a></li>
+                            <li><a href="#">我是廠商</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img class="cart" src="./images/cart.png" alt="購物車" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main class="main">
+        <!-- 店家照片 -->
+        <div id="storeandproduct" class="storepic">
+            <img style="width: 100%;" src="./images/13v1.png" alt="">
+        </div>
+        <!-- 店家位置 -->
+        <div class="storeloc">之後放地圖
+            <img style="width: 240px; height: 160px" src="" alt="">
+        </div>
+        <!-- 店名+簡介+營業時間+檢舉按鈕 -->
+        <div id="storeandproduct" class="storeintr">
+            <li>
+                <h1>大嗑西式餐館</h1>
+            </li>
+            <li>
+                供應義大利麵、牛排與燉飯等西式料理，並可搭配啤酒與紅酒。
+            </li>
+            <li>
+                營業時間: 11:00~21:00
+            </li>
+            <li><button>檢舉店家</button></li>
+        </div>
+        <!-- 商品 -->
+        <div id="storeandproduct" class="product-and-review">
+            <div class="product">
+                <h2>本店料理</h2>
+
+                <div class="short-store">
+                    <!-- <img style="width: 240px; height: 160px" src="./images/images/13.jpg" alt=""> -->
+                    <h3>蒜味白蝦義大利麵</h3>
+                    <p hidden>product id</p>
+                    <span>價格NTD: 380</span><br>
+                    <span>產品介紹</span>
+                    <div class="countbtns">
+                        <button class="minus"><i class="fa-solid fa-minus" style="margin-left: 3px;"></i></button>
+                        <input type="number" value="1" class="number" min="0" style="width: 50px;">
+                        <button class="plus"><i class="fa-solid fa-plus" style="margin-left: 3px;"></i></button>
+                    </div>
+                </div>
+                <div class="short-store">
+                    <!-- <img style="width: 240px; height: 160px" src="./images/images/13.jpg" alt=""> -->
+                    <h3>香料焗田螺佐鄉村麵包</h3>
+                    <p hidden>product id</p>
+                    <span>價格NTD: 280</span><br>
+                    <span>產品介紹</span>
+                    <div class="countbtns">
+                        <button class="minus"><i class="fa-solid fa-minus" style="margin-left: 3px;"></i></button>
+                        <input type="number" value="1" class="number" min="0" style="width: 50px;">
+                        <button class="plus"><i class="fa-solid fa-plus" style="margin-left: 3px;"></i></button>
+                    </div>
+                </div>
+                <div class="short-store">
+                    <!-- <img style="width: 240px; height: 160px" src="./images/images/13.jpg" alt=""> -->
+                    <h3>招牌炸雞翅</h3>
+                    <p hidden>product id</p>
+                    <span>價格NTD: 45</span><br>
+                    <span>產品介紹</span>
+                    <div class="countbtns">
+                        <button class="minus"><i class="fa-solid fa-minus" style="margin-left: 3px;"></i></button>
+                        <input type="number" value="1" class="number" min="0" style="width: 50px;">
+                        <button class="plus"><i class="fa-solid fa-plus" style="margin-left: 3px;"></i></button>
+                    </div>
+                </div>
+                <div class="short-store">
+                    <!-- <img style="width: 240px; height: 160px" src="./images/images/13.jpg" alt=""> -->
+                    <h3>紅酒燉牛頰</h3>
+                    <p hidden>product id</p>
+                    <span>價格NTD: 580</span><br>
+                    <span>產品介紹</span>
+                    <div class="countbtns">
+                        <button class="minus"><i class="fa-solid fa-minus" style="margin-left: 3px;"></i></button>
+                        <input type="number" value="1" class="number" min="0" style="width: 50px;">
+                        <button class="plus"><i class="fa-solid fa-plus" style="margin-left: 3px;"></i></button>
+                    </div>
+                </div>
+
+                <div class="thecart"><a class="tocart" href="放入購物車連結">放入購物車<i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <!-- 評論 -->
+            <div id="reviewlist" class="review">
+                <h2>評論區</h2>
+                <div class="comment">
+                    <li>留言留言留言留言留言</li>
+                    <div class="storereplay">
+                        <input type="text">
+                        <button class="replay">回覆</button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <li>留言留言留言留言留言</li>
+                    <div class="storereplay">
+                        <input type="text">
+                        <button class="replay">回覆</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- row5：footer -->
+
+    <div class="row5">
+        <footer id="footer" class="hoc clear">
+
+            <h3 class="heading">Order faster, bite easier</h3>
+            <div>
+                <div class="footer_div">
+                    <h4>店家</h4>
+                    <a href="">店家總覽</a><br />
+                    <a href="">地圖搜尋</a><br />
+                </div>
+                <div class="footer_div">
+                    <h4>會員</h4>
+                    <a href="">會員中心</a><br />
+                    <a href="">登入/註冊</a><br />
+                    <a href="">我的最愛</a><br />
+                    <a href="">我的購物車</a><br />
+
+                </div>
+                <div class="footer_div">
+                    <h4>幫助</h4>
+                    <a href="">聯絡我們</a><br />
+                </div>
+            </div>
+
+            <!-- copyright宣告  -->
+
+            <div id="copyright">
+                <p>
+                    Copyright &copy; 2022 - All Rights Reserved -
+                    <a href="#">Domain Name</a>
+                </p>
+                <p class="font-xs">
+                    Template by
+                    <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS
+                        Templates</a>
+                </p>
+            </div>
+
+            <!-- 評論 -->
+
+
+
+            </main>
+
+
+            <!-- row5：footer -->
+
+            <div class="row5">
+                <footer id="footer" class="hoc clear">
+
+                    <h3 class="heading">Order faster, bite easier</h3>
+                    <div>
+                        <div class="footer_div">
+                            <h4>店家</h4>
+                            <a href="">店家總覽</a><br />
+                            <a href="">地圖搜尋</a><br />
+                        </div>
+                        <div class="footer_div">
+                            <h4>會員</h4>
+                            <a href="">會員中心</a><br />
+                            <a href="">登入/註冊</a><br />
+                            <a href="">我的最愛</a><br />
+                            <a href="">我的購物車</a><br />
+
+                        </div>
+                        <div class="footer_div">
+                            <h4>幫助</h4>
+                            <a href="">聯絡我們</a><br />
+                        </div>
+                    </div>
+
+                    <!-- copyright宣告  -->
+
+                    <div id="copyright">
+                        <p>
+                            Copyright &copy; 2022 - All Rights Reserved -
+                            <a href="#">Domain Name</a>
+                        </p>
+                        <p class="font-xs">
+                            Template by
+                            <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS
+                                Templates</a>
+                        </p>
+                    </div>
+
+                </footer>
+            </div>
+
+            <!-- 右下角那個標籤 -->
+            <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+            <!-- JAVASCRIPTS -->
+            <script src="./scripts/jquery.min.js"></script>
+            <script src="./scripts/jquery.backtotop.js"></script>
+            <script src="./scripts/jquery.mobilemenu.js"></script>
+            <!-- fontawesome -->
+            <!-- <script src="./styles/fontawesome-4.6.3.min.css" crossorigin="anonymous"></script> -->
+            <script src="./scripts/storesheet.js"></script>
+</body>
+
+</html>

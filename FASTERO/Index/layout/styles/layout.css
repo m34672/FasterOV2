@@ -1,0 +1,609 @@
+@charset "utf-8";
+/*
+Template Name: Corklow
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("fontawesome-4.6.3.min.css");
+@import url("framework.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+
+div.row1 {
+	background-color: #ffffff;
+	height: 150px;
+}
+
+
+#header img.logo {
+	width: 200px;
+
+}
+
+#header img.cart {
+	width: 40px;
+}
+
+/* -------------- Nav導覽列 ---------------- */
+
+#mainav ul.clear {
+	margin-top: 3px;
+
+}
+
+
+#mainav ul ul {
+	z-index: 9999;
+	position: absolute;
+	width: 180px;
+	text-transform: none;
+}
+
+#mainav ul ul ul {
+	left: 180px;
+	top: 0;
+}
+
+#mainav li {
+	display: inline-block;
+	position: relative;
+	margin: 0 15px 0 0;
+	padding: 0;
+}
+
+#mainav li:last-child {
+	margin-right: 0;
+}
+
+#mainav li li {
+	width: 100%;
+	margin: 0;
+}
+
+#mainav li a {
+	display: block;
+	padding: 30px 0;
+}
+
+#mainav li li a {
+	border: solid;
+	border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+	padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+	display: block;
+	margin: 0;
+	padding: 10px 15px;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+	content: "\f0d7";
+}
+
+#mainav .drop::after {
+	top: 35px;
+	left: 5px;
+}
+
+#mainav li li .drop::after {
+	top: 15px;
+	left: 5px;
+}
+
+#mainav ul ul {
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+#mainav ul li:hover>ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+#mainav form {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainav form select,
+#mainav form select option {
+	display: block;
+	cursor: pointer;
+	outline: none;
+}
+
+#mainav form select {
+	width: 100%;
+	padding: 5px;
+	border: none;
+}
+
+#mainav form select option {
+	margin: 5px;
+	padding: 0;
+	border: none;
+}
+
+
+
+
+/* Container 中間三區塊
+--------------------------------------------------------------------------------------------------------------- */
+.container2 {
+	padding: 0px 50px;
+}
+
+div table {
+	border: 1px solid gray;
+	text-align: center;
+	font-size: 16px;
+	padding: 50px 50px;
+}
+
+div table td {
+	border: 0.5px solid gray;
+	padding: 15px 90px;
+
+}
+
+div.row2 h3.topic {
+	text-align: center;
+	vertical-align: top;
+	padding: 30px 30px;
+}
+
+div.random {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	height: 100px;
+
+}
+
+/* --------------------------------------------------- */
+.container3 {
+	padding: 50px 50px;
+	border: 50px;
+	height: 100%;
+}
+
+/* --------------------------------------------------- */
+.container4 {
+	padding: 50px 50px;
+	border: 50px;
+	height: 100%;
+}
+
+
+
+
+
+
+/* Footer */
+#footer {
+	padding: 80px 0;
+	text-align: center;
+}
+
+#footer .heading,
+#footer ul {
+	margin-bottom: 30px;
+}
+
+#footer>ul:last-of-type {
+	margin-bottom: 40px;
+}
+
+
+
+#footer #copyright * {
+	margin: 0;
+	padding: 0;
+}
+
+#footer div.footer_div {
+	display: inline-block;
+	height: 250px;
+	width: 300px;
+	padding: 20px;
+	vertical-align: top;
+}
+
+
+
+
+/* Navigation */
+
+nav ul,
+nav ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainav {
+	line-height: normal;
+	
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 10px;
+	line-height: 10px;
+}
+
+
+
+
+/* Font Awesome Icons */
+
+
+i.fa-solid.fa-xmark,
+i.fa-solid.fa-angles-right,
+i.fa-solid.fa-heart {
+	cursor: pointer;
+	color: #16213E;
+}
+
+i.fa-solid.fa-xmark:hover,
+i.fa-solid.fa-heart:hover {
+
+	color: #E94560;
+}
+.add-heart{
+	color: #E94560 !important;
+}
+.add-no{
+	color: #FF0000 !important; 
+}
+
+i.fa-solid.fa-angles-right:hover {
+	color: #EC9B3B;
+
+}
+
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body {
+	color: #474747;
+	background-color: #F7F7F7;
+}
+
+a {
+	color: #B97D2D;
+}
+
+a:active,
+a:focus {
+	background: transparent;
+}
+
+/* IE10 + 11 Bugfix - prevents grey background */
+hr,
+.borderedbox {
+	border-color: #D7D7D7;
+}
+
+label span {
+	color: #FF0000;
+	background-color: inherit;
+}
+
+input:focus,
+textarea:focus,
+*:required:focus {
+	border-color: #B97D2D;
+}
+
+
+.btn,
+.btn.inverse:hover {
+	color: #FFFFFF;
+	background-color: #B97D2D;
+	border-color: #B97D2D;
+}
+
+.btn:hover,
+.btn.inverse {
+	color: inherit;
+	background-color: transparent;
+	border-color: inherit;
+}
+
+
+/* Rows */
+
+
+.row1 {
+	background-color: #FFFFFF;
+	position: sticky; 
+	top: 0px;
+}
+
+.row2 {
+	background-color: #F7F7F7;
+}
+
+.row3 {
+	background-color: #FFFFFF;
+}
+
+.row4 {
+	background-color: #F7F7F7;
+}
+
+.row5 {
+	background-color: #FFFFFF;
+}
+
+
+/* Top Bar */
+#topbar ul li {
+	border-color: rgba(255, 255, 255, .2);
+}
+
+#topbar>div:last-of-type li:first-child a {
+	color: #B97D2D;
+}
+
+
+/* Header */
+#header #logo h1 a {
+	color: inherit;
+	background-color: inherit;
+}
+
+
+
+/* Footer */
+#footer #copyright a {
+	color: inherit;
+	background-color: inherit;
+}
+
+
+/* Navigation */
+#mainav li a {
+	color: inherit;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover>a {
+	color: #B97D2D;
+	background-color: inherit;
+}
+
+#mainav li li a,
+#mainav .active li a {
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, .6);
+	border-color: rgba(0, 0, 0, .6);
+}
+
+#mainav li li:hover>a,
+#mainav .active .active>a {
+	color: #FFFFFF;
+	background-color: #B97D2D;
+}
+
+#mainav form select {
+	color: #FFFFFF;
+	background-color: #413E3D;
+}
+
+
+
+
+#backtotop {
+	color: #FFFFFF;
+	background-color: #B97D2D;
+}
+
+
+
+
+
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport {
+	width: device-width;
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	.hoc {
+		max-width: 978px;
+	}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px) {
+	.hoc {
+		max-width: 90%;
+	}
+
+	#topbar {}
+
+	#header {
+		padding: 30px 0;
+	}
+
+	#header #logo {
+		margin: 0;
+	}
+
+	#mainav {}
+
+	#mainav ul {
+		display: none;
+	}
+
+	#mainav form {
+		display: block;
+		margin-top: 8px;
+	}
+
+
+	#comments input[type="reset"] {
+		margin-top: 10px;
+	}
+
+	.pagination li {
+		display: inline-block;
+		margin: 0 5px 5px 0;
+	}
+
+	#footer {}
+}
+
+
+@media screen and (max-width:750px) {
+
+	.imgl,
+	.imgr {
+		display: inline-block;
+		float: none;
+		margin: 0 0 10px 0;
+	}
+
+	.fl_left,
+	.fl_right {
+		display: block;
+		float: none;
+	}
+
+	.one_half,
+	.one_third,
+	.two_third,
+	.one_quarter,
+	.two_quarter,
+	.three_quarter {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 0 30px 0;
+		padding: 0;
+	}
+
+	#topbar {
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	#topbar ul {
+		margin: 0 0 15px 0;
+		line-height: normal;
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	#header #logo {
+		margin: 0 0 30px 0;
+	}
+
+	#mainav form {
+		margin-top: 0;
+	}
+
+	#pageintro article .heading {
+		margin-bottom: 30px;
+		font-size: 38px;
+	}
+
+	#pageintro article p:first-of-type {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+
+	#services .table,
+	#services .table-row,
+	#services .table-cell {
+		display: block;
+		width: 100%;
+	}
+
+	#services .table-cell {
+		padding: 5%;
+	}
+}
+
+
+@media screen and (max-width:450px) {
+	#topbar ul li {
+		margin-bottom: 2px;
+		padding-right: 0;
+		border-right: none;
+	}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px) {
+	.scrollable {
+		display: block;
+		width: 100%;
+		margin: 0 0 30px 0;
+		padding: 0 0 15px 0;
+		overflow: auto;
+		overflow-x: scroll;
+	}
+
+	.scrollable table {
+		margin: 0;
+		padding: 0;
+		white-space: nowrap;
+	}
+
+	.inline li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.pushright li {
+		margin-right: 0;
+	}
+
+	.font-x2 {
+		font-size: 1.4rem;
+	}
+
+	.font-x3 {
+		font-size: 1.6rem;
+	}
+}

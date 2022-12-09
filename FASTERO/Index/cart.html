@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="images/logo.ico" />
+  <link href="layout/styles/cart.css" rel="stylesheet" type="text/css" media="all" />
+  <title>購物車</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="row1">
+    <header id="header" class="hoc clear">
+      <a href="./index.html">
+        <img class="logo" src="./images/logo_navy.png" alt="logo" />
+      </a>
+
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active">
+            <a class="drop" href="#">我要點餐</a>
+            <ul>
+              <li><a href="#">商家總覽</a></li>
+              <li><a href="#">搜尋點餐</a></li>
+              <li><a href="#">地圖點餐</a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a class="drop" href="#">訂單狀態</a>
+            <ul>
+              <li><a href="#">現在訂單</a></li>
+              <li><a href="#">歷史訂單</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="./wishlist.html">我的最愛</a></li>
+          <li class="active"><a href="#">會員中心</a></li>
+          <li class="active">
+            <a class="drop" href="#">登入/註冊</a>
+            <ul>
+              <li><a href="#">我是會員</a></li>
+              <li><a href="#">我是廠商</a></li>
+            </ul>
+          </li>
+          <li>
+            <div id="cart">
+            </div>
+            <a href="#"><img class="cart" src="./images/cart.png" alt="購物車" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="row2">
+    <div>
+      <div class="container">
+        <div class="row" style="margin-bottom: 8px">
+          <div class="col-6 d-flex justify-content-center">
+            <div class="info" id="store_pic">
+              <img style="width: 100%; height: 100%" src="./images/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="info" id="store_info">
+              <h2>我的購物車</h2>
+              <h4>大嗑西式餐館</h4>
+              <h6>地址：台北市中正區濟南路二段18-3號</h6>
+              <h6>電話：0987654321</h6>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row d-flex justify-content-center">
+          <table class="cart col-10">
+            <thead>
+              <td>商品資訊</td>
+              <td>單件價格</td>
+              <td>數量</td>
+              <td>小計</td>
+            </thead>
+            <tbody id="product">
+
+            </tbody>
+            <tfoot>
+              <td colspan="2"></td>
+              <td>應付金額</td>
+              <td id="total">0</td>
+              <td></td>
+            </tfoot>
+          </table>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h5 style="margin-top: 1%;">備註：</h5>
+
+            <textarea style="width:100%;margin: 1% 0;" name="" id="remark" cols="5" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 d-flex justify-content-end">
+            <div style="padding: 0 24px">
+              付款方式：
+              <select>
+                <!-- <option>現場付款</option> -->
+                <option>信用卡</option>
+              </select>
+            </div>
+            <div>
+              取餐方式：
+              <select>
+                <option>現場自取</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="button_area">
+          <button class="back-store">返回店家</button>
+          <p class="space"></p>
+          <button class="confirm-meal">確認點餐</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row5">
+    <footer id="footer" class="hoc clear">
+      <h3 class="heading">Order faster, bite easier</h3>
+      <div>
+        <div class="footer_div">
+          <h4>店家</h4>
+          <a href="">店家總覽</a><br />
+          <a href="">地圖搜尋</a><br />
+        </div>
+        <div class="footer_div">
+          <h4>會員</h4>
+          <a href="">會員中心</a><br />
+          <a href="">登入/註冊</a><br />
+          <a href="">我的最愛</a><br />
+          <a href="">我的購物車</a><br />
+        </div>
+        <div class="footer_div">
+          <h4>幫助</h4>
+          <a href="">聯絡我們</a><br />
+        </div>
+      </div>
+
+      <!-- copyright宣告  -->
+
+      <div id="copyright">
+        <p>
+          Copyright &copy; 2022 - All Rights Reserved -
+          <a href="#">Domain Name</a>
+        </p>
+        <p class="font-xs">
+          Template by
+          <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./layout/scripts/cart.js"></script>
+</body>
+
+</html>

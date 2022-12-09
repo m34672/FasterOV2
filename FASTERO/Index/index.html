@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--
+Template Name: Corklow
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="zh-TW">
+
+<head>
+  <title>快點享 | 美食訂餐自取</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/logo.ico">
+  <link href="./layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+  <!-- row1：header + nav -->
+  <div class="row1">
+    <header id="header" class="hoc clear">
+      <a href="./index.html">
+        <img class="logo" src="./images/logo_navy.png" alt="logo" />
+      </a>
+
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active">
+            <a class="drop" href="#">我要點餐</a>
+            <ul>
+              <li><a href="#">商家總覽</a></li>
+              <li><a href="#">搜尋點餐</a></li>
+              <li><a href="#">地圖點餐</a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a class="drop" href="#">訂單狀態</a>
+            <ul>
+              <li><a href="#">現在訂單</a></li>
+              <li><a href="#">歷史訂單</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="./wishlist.html">我的最愛</a></li>
+          <li class="active"><a href="#">會員中心</a></li>
+          <li class="active">
+            <a class="drop" href="#">登入/註冊</a>
+            <ul>
+              <li><a href="#">我是會員</a></li>
+              <li><a href="#">我是廠商</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../Index/cart.html"><img class="cart" src="./images/cart.png" alt="購物車" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+
+  <!-- row2：隨機推薦 -->
+  <main>
+
+    <div class="row2">
+      <div class="container2">
+        <div>
+          <h3 class="topic">今天想吃什麼？</h3>
+        </div>
+        <div class="food" style="display: flex;justify-content: center;" id="foodImg">
+          <a style="width:50%;height:50%;margin-bottom: 20px;" href="" id="randomLink">
+            <img src="" id="randomImg" alt="" />
+
+          </a>
+        </div>
+        <!-- 以下引入fontawesome的icon fa-3x是大小 要調整要去官網找 無法從css調整 -->
+        <div class="no random">
+          <i class="fa-solid fa-xmark fa-3x" id="no"></i>
+        </div>
+        <div class="next random">
+          <i class="fa-solid fa-angles-right fa-3x"></i>
+        </div>
+        <div class="love random">
+          <i class="fa-solid fa-heart fa-3x" id="heart"></i>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- row3：推薦店家 -->
+
+    <!-- <div class="row3">
+      <section class="hoc container3 clear">
+
+        <div class="center btmspace-50">
+          <h3 class="font-x2 nospace">推薦店家</h3>
+          <p class="nospace">
+            Tincidunt placerat dui id feugiat duis eu vehicula ipsum id feugiat
+            elit maecenas
+          </p>
+        </div>
+        <div class="group">
+          <article class="one_third first">
+            <a href="#"><img class="btmspace-30" src="./images/2.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              大嗑西式餐館
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+              <li>義式</li>
+              </li>
+            </ul>
+            <hr />
+            <p>
+              來盤好吃的地中海海鮮義大利麵吧！lacinia&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+          <article class="one_third">
+            <a href="#"><img class="btmspace-30" src="./images/3.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              Lacinia etiam ornare
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+                <time datetime="2045-04-05">5<sup>th</sup> April 2045</time>
+              </li>
+              <li class="fl_right">by <a href="#">Admin</a></li>
+            </ul>
+            <hr />
+            <p>
+              Morbi tempor ac nibh eu imperdiet diam maecenas in facilisis arcu
+              nec pulvinar risus etiam convallis lacus&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+          <article class="one_third">
+            <a href="#"><img class="btmspace-30" src="./images/4.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              Elementum vestibulum
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+                <time datetime="2045-04-04">4<sup>th</sup> April 2045</time>
+              </li>
+              <li class="fl_right">by <a href="#">Admin</a></li>
+            </ul>
+            <hr />
+            <p>
+              Est lectus lacinia enim quis egestas leo urna id ex integer ipsum
+              purus sagittis at eleifend et vestibulum&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+        </div>
+
+      </section>
+    </div> -->
+
+
+    <!-- row4：最新店家 -->
+
+    <!-- <div class=" row4">
+      <section class="hoc container4 clear">
+
+        <div class="center btmspace-50">
+          <h3 class="font-x2 nospace">最新店家</h3>
+          <p class="nospace">
+            Tincidunt placerat dui id feugiat duis eu vehicula ipsum id feugiat
+            elit maecenas
+          </p>
+        </div>
+        <div class="group">
+          <article class="one_third first">
+            <a href="#"><img class="btmspace-30" src="./images/8.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              Tincidunt eget nisi
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+                <time datetime="2045-04-06">6<sup>th</sup> April 2045</time>
+              </li>
+              <li class="fl_right">by <a href="#">Admin</a></li>
+            </ul>
+            <hr />
+            <p>
+              Auctor cursus feugiat sed scelerisque id odio non scelerisque sed
+              ac est rhoncus sodales ante dictum lacinia&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+          <article class="one_third">
+            <a href="#"><img class="btmspace-30" src="./images/6.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              Lacinia etiam ornare
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+                <time datetime="2045-04-05">5<sup>th</sup> April 2045</time>
+              </li>
+              <li class="fl_right">by <a href="#">Admin</a></li>
+            </ul>
+            <hr />
+            <p>
+              Morbi tempor ac nibh eu imperdiet diam maecenas in facilisis arcu
+              nec pulvinar risus etiam convallis lacus&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+          <article class="one_third">
+            <a href="#"><img class="btmspace-30" src="./images/7.jpg" alt="" /></a>
+            <h4 class="nospace btmspace-10 font-x1 uppercase">
+              Elementum vestibulum
+            </h4>
+            <ul class="nospace btmspace-10 group font-xs">
+              <li class="fl_left">
+                <time datetime="2045-04-04">4<sup>th</sup> April 2045</time>
+              </li>
+              <li class="fl_right">by <a href="#">Admin</a></li>
+            </ul>
+            <hr />
+            <p>
+              Est lectus lacinia enim quis egestas leo urna id ex integer ipsum
+              purus sagittis at eleifend et vestibulum&hellip;
+            </p>
+            <p class="nospace"><a href="#">Read More &raquo;</a></p>
+          </article>
+        </div>
+
+      </section>
+    </div> -->
+  </main>
+
+
+  <!-- row5：footer -->
+
+  <div class=" row5">
+    <footer id="footer" class="hoc clear">
+
+      <h3 class="heading">Order faster, bite easier</h3>
+      <div>
+        <div class="footer_div">
+          <h4>店家</h4>
+          <a href="">店家總覽</a><br />
+          <a href="">地圖搜尋</a><br />
+        </div>
+        <div class="footer_div">
+          <h4>會員</h4>
+          <a href="">會員中心</a><br />
+          <a href="">登入/註冊</a><br />
+          <a href="">我的最愛</a><br />
+          <a href="">我的購物車</a><br />
+
+        </div>
+        <div class="footer_div">
+          <h4>幫助</h4>
+          <a href="">聯絡我們</a><br />
+        </div>
+      </div>
+
+      <!-- copyright宣告  -->
+
+      <div id="copyright">
+        <p>
+          Copyright &copy; 2022 - All Rights Reserved -
+          <a href="#">Domain Name</a>
+        </p>
+        <p class="font-xs">
+          Template by
+          <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a>
+        </p>
+      </div>
+
+    </footer>
+  </div>
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="../Index/layout/scripts/index.js"></script>
+
+  <!-- <script src="../layout/scripts/jquery.min.js"></script>
+  <script src="../layout/scripts/jquery.backtotop.js"></script>
+  <script src="../layout/scripts/jquery.mobilemenu.js"></script> -->
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/f13b4d1fd8.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
